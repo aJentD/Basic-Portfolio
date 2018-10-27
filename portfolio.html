@@ -2,33 +2,50 @@
 <html lang="en">
     <head>
         <title>Portfolio</title>
+        <link href="assets/css/reset.css" text="text/css" rel="stylesheet">
         <link href="assets/css/style.css" text="text/css" rel="stylesheet">
     </head>
     <body>
-        <section class="top">
+        <section id="top">
         <header>
-            <h1 class="name">Jennifer Dollinger</h1>
+            <h1 id="name">Jennifer Dollinger</h1>
+            <nav>
+                <ul>
+                    <li><a class="b" href="index.html">About</a></li>           
+                    <li><a class="b" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="b" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </header>
-        <div class="nav">
-            <ul>
-                <li class="a"><a class="b" href="index.html">About</a></li>           
-                <li class="a"><a class="b" href="portfolio.html">Portfolio</a></li>
-                <li class="a"><a class="b" href="contact.html">Contact</a></li>
-            </ul>
-            </div>
+       
         </section>
-            <div class="container">
     
-                <section id="main-body">
+                <section id="container">
 
-                        <h1 class="discription"><strong>Portfolio</strong></h1>
-                
-                    
-                    <p><img src="assets/images/games.jpg"><a href="#">Games</a></p><br>
-                    <p><img src="assets/images/mobile.jpg"><a href="#">Mobile App</a></p><br>
-                    <p><img src="assets/images/running.jpg"><a href="#">Running Tracker</a></p><br>
+                    <h1 id="discription"><strong>Portfolio</strong></h1>
+
+                    <div class="block">
+                        <img class="block-img"  src="assets/images/Fitness App.jpeg">
+                        <div class="block-text">
+                            <p class="porta"><a href="fitness.html">Fitness</a></p><br>
+                        </div>                        
+                    </div>
+
+                    <div class="block">
+                        <img class="block-img"  src="assets/images/Baking Site.jpeg">
+                        <div class="block-text">
+                            <p class="porta"><a class="block-link" href="baking.html">Baking</a></p><br>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <img class="block-img" src="assets/images/Art App.jpeg">
+                        <div class="block-text">
+                            <p class="porta"><a href="art.html">Art</a></p><br>
+                        </div>
+                    </div>
+
                 </section>
-            </div>
             <footer>&copy; Made Up</footer>
         
         </body>

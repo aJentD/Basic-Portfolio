@@ -13,7 +13,7 @@ body{
     line-height: 150%;
 }
 
-.top{ 
+#top{ 
     background-color: #ffffff;
     padding: 30px;
     width: 100%;
@@ -26,7 +26,7 @@ h1{
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-.name{
+#name{
     background-color:  #4aaaa5;
     color:#ffffff;
     text-align: center;
@@ -41,41 +41,47 @@ h1{
     float: left;
    }
 
-.nav{
+nav{
     float: right;
     font-size: 16px;
     text-decoration: #777777;
     height: 20px;
     width: 300px;
     color: #777777;
-    position: absolute;
-    top: 15px;
+    position: relative;
     right: 100px;
     margin-right: 100px;
-/* need to clear float! */
 }
 
 ul li{
     float: left;
     list-style: none;
+    padding-right: 10px;
     margin-right: 12px;
     border-right: 1px solid #777777;
-    padding: 12px;
+    }
+
+ul li:last-child{
+    border: none;
+    /* doesn't work */
 }
 
-a{
+.b{
     text-decoration: none;
+    color: #777777
 }
 
+.b:hover{
+    color: #4aaaa5;
+}
 
-
-.discription{
+#discription{
     clear: float;
     color: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
     text-align: left;
     line-height:100%;
-    font-size: 28px;
+    font-size: 30px;
     height: 80px;
     width: 900px;
     padding: 20px 40px;
@@ -84,9 +90,9 @@ a{
     border-bottom: 1px solid #777777;
 }
 
-.container{
+#container{
     max-width: 960px;
-    min-height: 400px;
+    height: auto;
     overflow: hidden;
     margin: 40px auto;
     border: 2px solid #ffffff;
@@ -94,32 +100,104 @@ a{
     background-image: url(what-the-hex.png);
     }
 
-.clearfix::after{
-    content: "";
-    clear: both;
-    display: table;
-}
 #bio-img{
-    width: 350px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     float: left;
     margin: 20px;
+}
+
+.index{
+    margin-right: 20px;
+}
+
+.porta{  
+    color:#ffffff;
+    background-color: #4aaaa5;  
+    text-decoration: none;
+    font-size: 18px;
+    height: 30px;
+    width: 200px;
+}
+
+.porta:hover{
+    background-color: #ffffff;
+    color:#4aaaa5;
+}
+
+.block{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    margin-bottom: 30px;
+    width: 450px;
+    height: 200px;
+    float: left;
+}
+
+.block-img{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 125px;
+    z-index: 2;
+}
+
+.block-text{
+    background-color:  #4aaaa5;
+    color:#ffffff;
+    text-align: center;
+    vertical-align: middle; 
+    height: 30px;
+    width: 200px;
+    position: absolute;
+    left: 125px;
+    bottom: 50px;
+    z-index: 2;
+}
+
+.block a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.block a:hover{
+    background-color: #ffffff;
+    color:#4aaaa5;
 }
 
 form{
     margin-left: 40px;
 }
 
-p{
+#button{
+    height: 40px;
+    width: 80px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#button:hover{
+    color: #4aaaa5;
+    background-color: #ffffff;
+}
+
+.about{
     margin: 20px;
-    /* fix float, doesn't work! */
 }
 
 footer{
     float: clear;
-    margin-right: 20px;
+    overflow: hidden;
     background-color: #666666;
     color: #ffffff;
     border-top: 10px solid #4aaaa5;
     text-align: center;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    z-index: 3;
 }
